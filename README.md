@@ -1,7 +1,7 @@
 # A developer's guide to the IoT by IBM
 
 New documentation site (with mkdocs):
-[https:danielamazza.github.io/A_Developer_Guide_To_the_IoT_IBM](https:danielamazza.github.io/A_Developer_Guide_To_the_IoT_IBM)
+[https://danielamazza.github.io/A_Developer_Guide_To_the_IoT_IBM](https://danielamazza.github.io/A_Developer_Guide_To_the_IoT_IBM)
 
 * [About this Course](https://github.com/leehaesung/A-developer-s-guide-to-the-IoT-by-IBM/blob/master/01_Lecture_Notes/README.md)
 * [Visit the Coursera (A developer's guide to the Internet of Things (IoT) by IBM)](https://www.coursera.org/learn/developer-iot/home/welcome)
