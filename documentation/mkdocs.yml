@@ -1,2 +1,5 @@
-site_name: Notes to Dev Guide IoT
+site_name: A Developer's Guide To the Internet of Things (IoT)
+pages:
+    - Week1: index.md
+    - Week2: week2.md
 theme: readthedocs
