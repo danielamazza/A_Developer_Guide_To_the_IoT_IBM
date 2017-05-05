@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Week2 - A Developer's Guide To the Internet of Things (IoT)</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Week2";
+    var mkdocs_page_input_path = "week2.md";
+    var mkdocs_page_url = "/week2/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> A Developer's Guide To the Internet of Things (IoT)</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Week1</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Week2</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#rapid-application-development-in-the-cloud">Rapid application development in the cloud</a></li>
+                
+                    <li><a class="toctree-l4" href="#learning-objectives">Learning Objectives</a></li>
+                
+                    <li><a class="toctree-l4" href="#introduction-to-a-platform-as-a-service-ibm-bluemix">Introduction to a Platform as a Service - IBM Bluemix</a></li>
+                
+                    <li><a class="toctree-l4" href="#rapid-application-development-for-internet-of-things">Rapid application development for Internet of Things</a></li>
+                
+                    <li><a class="toctree-l4" href="#nodered-function-node">NodeRED function node</a></li>
+                
+                    <li><a class="toctree-l4" href="#additional-nodered-nodes">Additional NodeRED nodes</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../week3/">Week3</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../week4/">Week4</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../resources/">Resources</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">A Developer's Guide To the Internet of Things (IoT)</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Week2</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="rapid-application-development-in-the-cloud">Rapid application development in the cloud</h1>
+<p>An Internet of Things solution usually requires a back-end server to receive and process data coming from sensors. Cloud platforms allow new solutions to be created and deployed very rapidly without having to worry about how to host the application. This series of lessons introduces you to a cloud based Platform as a Service and an open source rapid application development environment called NodeRED.</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>Describe a number of cloud computing solutions and their benefits
+Summarize what comprises an IoT solution
+Describe the benefits of rapid application development through NodeRED
+Demonstrate basic understanding of NodeRED flows by creating working flows as part of a cloud app
+Demonstrate how you can use NodeRED nodes such as input, output, function and template nodes, and combine them with flow logic, to create IoT solutions (such as one with simple web services)</p>
+<h2 id="introduction-to-a-platform-as-a-service-ibm-bluemix">Introduction to a Platform as a Service - IBM Bluemix</h2>
+<ul>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/06_IntroductionToIBMBluemixAgenda_27sec.mp4">Introduction to IBM Bluemix - Agenda</a> (27 sec)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/07_OverviewOfCloudComputing_3min.mp4">Overview of Cloud Computing</a> (3 min)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/08_WhatIsIBMBluemix_4min.mp4">What is IBM Bluemix?</a> (4 min)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/08_Create_an_IBM_Bluemix_account.mp4">Create an IBM Bluemix account</a> (52 sec)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/09_A%20tour%20of%20IBM%20Bluemix8min.mp4">A tour of IBM Bluemix</a> (7 min)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/10_IBM%20Bluemix%20Summary_35sec.mp4">IBM Bluemix Summary</a>  (35 sec)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/11_Learning%20module%20summary-%20Introduction%20to%20Platform%20as%20a%20Service%20-%20IBM%20Bluemix_10%20min.pdf">Learning module summary: Introduction to Platform as a Service - IBM Bluemix</a>  (10 min)</li>
+</ul>
+<h2 id="rapid-application-development-for-internet-of-things">Rapid application development for Internet of Things</h2>
+<ul>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/11_Introduction%20to%20NodeRED_11min.mp4">Introduction to NodeRED - 1</a> (9 min)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/12_Deploy%20NodeRED%20to%20Bluemix%20using%20a%20Boilerplate_step%20by%20step_10min.mp4">Deploy NodeRED to Bluemix using a Boilerplate - step by step</a> (10 min)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/13_Introduction%20to%20NodeRED_7min.mp4">Introduction to NodeRED - 2</a> (5 min)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/14_Adding%20a%20new%20node%20-%20step%20by%20step%2010%20min.pdf">Adding a new node - step by step</a> (10 min)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/15_Learning%20module%20summary-%20Rapid%20application%20development%20for%20Internet%20of%20Things%2010%20min.pdf">Learning module summary: Rapid application development for Internet of Things</a> (10 min)</li>
+</ul>
+<h2 id="nodered-function-node">NodeRED function node</h2>
+<ul>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/14_The%20NodeRED%20Function%20node%20part_1_06min.mp4">The NodeRED Function node part1</a> (6 min)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/16_Function%20node%20-%20step%20by%20step_10%20min.pdf">Function node - step by step</a> (10 min)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/15_The%20NodeRED%20Function%20node%20part2_6min.mp4">The NodeRED Function node part 2</a> (6 min)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/16_The%20NodeRED%20Function%20node%20part3_5min.mp4">The NodeRED Function node part 3</a> (5 min)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/17_Making%20packages%20available%20to%20the%20function%20node%20-%20step%20by%20step10min.pdf">Making packages available to the function node - step by step</a> (10 min)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/01_Lecture_Notes/Quiz1%20IoT%20Quiz.pdf">Quiz: Using the function node</a> (5 questions)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/01_Lecture_Notes/PrAs1%20Your%20First%20NodeRED%20application.pdf">Programming Assignment: Your First NodeRED application</a> (45 min)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/20_Learning%20module%20summary_%20NodeRED%20function%20node%20_%20Coursera.pdf">Learning module summary: NodeRED function node</a> (10 min)</li>
+</ul>
+<h2 id="additional-nodered-nodes">Additional NodeRED nodes</h2>
+<ul>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/17_NodeRED%20Additional%20node%20part1_6min.mp4">NodeRED Additional node part 1</a> (6 min)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/18_NodeRED%20Additional%20node%20part2_6min.mp4">NodeRED Additional node part 2</a> (6 min)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/21_Template%20node%20sample%20flow_10min.pdf">Template node sample flow</a> (10 min)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/19_NodeRED%20Additional%20node%20part3_6min.mp4">NodeRED Additional node part 3</a> (6 min)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/22_Controlling%20a%20node%20using%20input%20data_10min.pdf">Controlling a node using input data</a> (10 min)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/20_NodeRED%20Additional%20node%20part4_6min.mp4">NodeRED Additional node part 4</a> (6 min)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/01_Lecture_Notes/PrAs2%20NodeRED%20application.pdf">Programming Assignment: NodeRED application</a> (1h)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/24_Learning%20module%20summary_Additional%20NodeRED%20nodes_10min.pdf">Learning module summary: Additional NodeRED nodes</a> (10 min)</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../week3/" class="btn btn-neutral float-right" title="Week3">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Week1"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../week3/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
