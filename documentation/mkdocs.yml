@@ -2,4 +2,7 @@ site_name: A Developer's Guide To the Internet of Things (IoT)
 pages:
     - Week1: index.md
     - Week2: week2.md
-theme: readthedocs
+    - Week3: week3.md
+    - Week4: week4.md
+    - Resources: resources.md
+theme: mkdocs
