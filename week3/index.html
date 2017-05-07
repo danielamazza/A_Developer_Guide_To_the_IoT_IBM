@@ -144,8 +144,26 @@
 </ul>
 <h2 id="raspberry-pi-and-sensehat">Raspberry Pi and SenseHAT</h2>
 <ul>
-<li>A quick look at devices and sensor options (6 min)</li>
-<li>Setting up a Raspberry Pi and Raspberry Pi Sense Hat (8 min)</li>
+<li>
+<p><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/21_A%20quick%20look%20at%20devices%20and%20sensor%20options_6min.mp4">A quick look at devices and sensor options</a> (6 min)</p>
+<p>The Rasperry 3 is provided with a Bluetooth and a WiFi connection, so you don't need other connection tools. Other types of devices may need further connections modules. The output connection consists of a HDMI port for a monitor output. </p>
+<p>The <strong>categories</strong> of devices are essentially two:</p>
+<ul>
+<li>
+<p>the <strong>platform</strong> cathegory - powerful, running a complete OS, like Linux. This type has a lot of computing power in a small form factor and limited power consumption. They are ideal for a gateway or to provide some compute power at the Edge, often referred to as <strong>Edge Analytics</strong>. </p>
+</li>
+<li>
+<p><strong>embedded</strong> devices - smaller footprint with a limited computing power (tipically just few KB of memory, without an OS). Some devices provide very low access to hw, such as timers and different types of sensors.</p>
+</li>
+</ul>
+<p>Various devices differ for the supported programming languages and for the IDE (Integrated Development Environment) used to program them. For example, you can choose a <a href="http://nodemcu.com/index_en.html">NodeMCU</a> for an environmental monitoring solution, because it provides a temperature-humidity sensor. But you can also use a <a href="https://www.raspberrypi.org/">Rasperry Pi</a> to consolidate all that data before to report them to the Cloud platform. Sometimes there are configurations consisting on more than one device connected together, for example Raspberry Pi + Arduino (or Genuino). An other important device is the <strong>Sense HAT</strong>, which is provided with a tiny processor. The Raspberry Pi talks to the Sense HAT's processor, and then that processor deals with the lower level device control and sensor control on the board.</p>
+<p><strong>Sense HAT</strong> is one add-on board provided with pressure, humidity,  temperature, movement sensors (gyroscopes, accelerometer, and magnetometer), and has a 8x8 LED output matrix and a joistick.</p>
+<p>For connecting the devices you can use a plug and play mechanism such as the Grove Kits(https://www.seeedstudio.com/Grove-Starter-Kit-p-709.html), without needing to weld.</p>
+<p>As you go to develop your own IoT solution, you have got a wide range of choice of device and sensors available. But the used techniques and APIs can be applied to any device with any sensor. </p>
+</li>
+<li>
+<p>Setting up a Raspberry Pi and Raspberry Pi Sense Hat (8 min)</p>
+</li>
 <li>Setting up your Raspberry Pi - step by step (10 min)</li>
 <li>Extra resource – (for Windows) Install the Raspbian Jessie OS on an SD Card (1 min)</li>
 <li>Learning module summary: Raspberry Pi and SenseHAT (10 min)</li>
