@@ -1,137 +1,493 @@
+
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="shortcut icon" href="../assets/images/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.6.1">
+    
+    
+      
+        <title>Week3 - A Developer's Guide To the Internet of Things (IoT)</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-56ade86843.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-4d0d3f2fbf.css">
+      
+    
+    
+      
         
         
         
-        <link rel="shortcut icon" href="../img/favicon.ico">
-
-	<title>Week3 - A Developer's Guide To the Internet of Things (IoT)</title>
-
-        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="../css/highlight.css">
-
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
-
-        
-    </head>
-
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
     <body>
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href=".." title="A Developer's Guide To the Internet of Things (IoT)" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
             
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+              
             
-
-            <!-- Main title -->
-            <a class="navbar-brand" href="..">A Developer's Guide To the Internet of Things (IoT)</a>
+            Week3
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
         </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-            
-                <!-- Main navigation -->
-                <ul class="nav navbar-nav">
-                
-                
-                    <li >
-                        <a href="..">Week1</a>
-                    </li>
-                
-                
-                
-                    <li >
-                        <a href="../week2/">Week2</a>
-                    </li>
-                
-                
-                
-                    <li class="active">
-                        <a href="./">Week3</a>
-                    </li>
-                
-                
-                
-                    <li >
-                        <a href="../week4/">Week4</a>
-                    </li>
-                
-                
-                
-                    <li >
-                        <a href="../resources/">Resources</a>
-                    </li>
-                
-                
-                </ul>
-            
-
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                        <i class="fa fa-search"></i> Search
-                    </a>
-                </li>
-                
-                    <li >
-                        <a rel="next" href="../week2/">
-                            <i class="fa fa-arrow-left"></i> Previous
-                        </a>
-                    </li>
-                    <li >
-                        <a rel="prev" href="../week4/">
-                            Next <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </li>
-                
-                
-            </ul>
-        </div>
+      </div>
     </div>
+  </div>
 </div>
-
-        <div class="container">
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="md-header-nav__source">
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
             
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
     
-        <li class="main active"><a href="#rapid-application-development-on-a-raspberry-pi">Rapid application development on a Raspberry Pi</a></li>
-        
-            <li><a href="#learning-objectives">Learning Objectives</a></li>
-        
-            <li><a href="#raspberry-pi-and-sensehat">Raspberry Pi and SenseHAT</a></li>
-        
-            <li><a href="#rapid-application-development-with-nodered-on-a-raspberry-pi">Rapid Application Development with NodeRED on a Raspberry Pi</a></li>
-        
-            <li><a href="#introduction-to-the-watson-internet-of-things-platform">Introduction to the Watson Internet of Things Platform</a></li>
-        
-            <li><a href="#controlling-a-device">Controlling a device</a></li>
-        
+      <i class="md-icon md-icon--home md-nav__button"></i>
     
-    </ul>
-</div></div>
-                <div class="col-md-9" role="main">
+    A Developer's Guide To the Internet of Things (IoT)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
 
-<h1 id="rapid-application-development-on-a-raspberry-pi">Rapid application development on a Raspberry Pi</h1>
+
+  <li class="md-nav__item">
+    <a href=".." title="Week1" class="md-nav__link">
+      Week1
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../week2/" title="Week2" class="md-nav__link">
+      Week2
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Week3
+      </label>
+    
+    <a href="./" title="Week3" class="md-nav__link md-nav__link--active">
+      Week3
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#learning-objectives" title="Learning Objectives" class="md-nav__link">
+    Learning Objectives
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raspberry-pi-and-sensehat" title="Raspberry Pi and SenseHAT" class="md-nav__link">
+    Raspberry Pi and SenseHAT
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-quick-look-at-devices-and-sensor-options-6-min" title="A quick look at devices and sensor options (6 min)" class="md-nav__link">
+    A quick look at devices and sensor options (6 min)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-a-raspberry-pi-and-raspberry-pi-sense-hat-8-min" title="Setting up a Raspberry Pi and Raspberry Pi Sense Hat (8 min)" class="md-nav__link">
+    Setting up a Raspberry Pi and Raspberry Pi Sense Hat (8 min)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-raspberry-pi-and-sense-hat" title="Why Raspberry Pi and Sense HAT?" class="md-nav__link">
+    Why Raspberry Pi and Sense HAT?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#required-hw" title="Required HW" class="md-nav__link">
+    Required HW
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-the-os-on-the-micro-sd-card" title="Installing the OS on the Micro SD card" class="md-nav__link">
+    Installing the OS on the Micro SD card
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-of-the-hw" title="Configuration of the HW" class="md-nav__link">
+    Configuration of the HW
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-your-raspberry-pi-step-by-step-pdf" title="Setting up your Raspberry Pi - step by step (pdf)" class="md-nav__link">
+    Setting up your Raspberry Pi - step by step (pdf)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rapid-application-development-with-nodered-on-a-raspberry-pi" title="Rapid Application Development with NodeRED on a Raspberry Pi" class="md-nav__link">
+    Rapid Application Development with NodeRED on a Raspberry Pi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-new-node-to-the-palette" title="Add a new node to the palette." class="md-nav__link">
+    Add a new node to the palette.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-the-watson-internet-of-things-platform" title="Introduction to the Watson Internet of Things Platform" class="md-nav__link">
+    Introduction to the Watson Internet of Things Platform
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#watson-internet-of-things-platform-5-min" title="Watson Internet of Things platform (5 min)" class="md-nav__link">
+    Watson Internet of Things platform (5 min)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controlling-a-device" title="Controlling a device" class="md-nav__link">
+    Controlling a device
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../week4/" title="Week4" class="md-nav__link">
+      Week4
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../resources/" title="Resources" class="md-nav__link">
+      Resources
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#learning-objectives" title="Learning Objectives" class="md-nav__link">
+    Learning Objectives
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raspberry-pi-and-sensehat" title="Raspberry Pi and SenseHAT" class="md-nav__link">
+    Raspberry Pi and SenseHAT
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-quick-look-at-devices-and-sensor-options-6-min" title="A quick look at devices and sensor options (6 min)" class="md-nav__link">
+    A quick look at devices and sensor options (6 min)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-a-raspberry-pi-and-raspberry-pi-sense-hat-8-min" title="Setting up a Raspberry Pi and Raspberry Pi Sense Hat (8 min)" class="md-nav__link">
+    Setting up a Raspberry Pi and Raspberry Pi Sense Hat (8 min)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-raspberry-pi-and-sense-hat" title="Why Raspberry Pi and Sense HAT?" class="md-nav__link">
+    Why Raspberry Pi and Sense HAT?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#required-hw" title="Required HW" class="md-nav__link">
+    Required HW
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-the-os-on-the-micro-sd-card" title="Installing the OS on the Micro SD card" class="md-nav__link">
+    Installing the OS on the Micro SD card
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-of-the-hw" title="Configuration of the HW" class="md-nav__link">
+    Configuration of the HW
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-your-raspberry-pi-step-by-step-pdf" title="Setting up your Raspberry Pi - step by step (pdf)" class="md-nav__link">
+    Setting up your Raspberry Pi - step by step (pdf)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rapid-application-development-with-nodered-on-a-raspberry-pi" title="Rapid Application Development with NodeRED on a Raspberry Pi" class="md-nav__link">
+    Rapid Application Development with NodeRED on a Raspberry Pi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-new-node-to-the-palette" title="Add a new node to the palette." class="md-nav__link">
+    Add a new node to the palette.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-the-watson-internet-of-things-platform" title="Introduction to the Watson Internet of Things Platform" class="md-nav__link">
+    Introduction to the Watson Internet of Things Platform
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#watson-internet-of-things-platform-5-min" title="Watson Internet of Things platform (5 min)" class="md-nav__link">
+    Watson Internet of Things platform (5 min)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controlling-a-device" title="Controlling a device" class="md-nav__link">
+    Controlling a device
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="rapid-application-development-on-a-raspberry-pi">Rapid application development on a Raspberry Pi</h1>
 <p>This unit looks at how to add a device to your solution. Creating an application on a Raspberry Pi and establishing secure, trusted communication between your cloud application and devices.</p>
 <h3 id="learning-objectives">Learning Objectives</h3>
 <ul>
@@ -140,12 +496,12 @@
 <li>Demonstrate how you can securely connect an application, device or gateway to an organization, and publish data</li>
 <li>Describe how you can bind a cloud application that is running on bluemix, to a service where devices are registered</li>
 <li>Demonstrate how data can be received at a gateway and send to a cloud app</li>
-<li>Demonstrate how data can be received by a cloud app, analyzed, and a command sent back to the correct device or gateway</li>
+<li>Demonstrate how data can be received by a cloud app, analyzed, and a command sent back to the correct device or gateway.</li>
 </ul>
 <h2 id="raspberry-pi-and-sensehat">Raspberry Pi and SenseHAT</h2>
 <ul>
 <li>
-<p><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/21_A%20quick%20look%20at%20devices%20and%20sensor%20options_6min.mp4">A quick look at devices and sensor options</a> (6 min)</p>
+<h3 id="a-quick-look-at-devices-and-sensor-options-6-min"><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/21_A%20quick%20look%20at%20devices%20and%20sensor%20options_6min.mp4">A quick look at devices and sensor options</a> (6 min)</h3>
 <p>The Rasperry 3 is provided with a Bluetooth and a WiFi connection, so you don't need other connection tools. Other types of devices may need further connections modules. The output connection consists of a HDMI port for a monitor output. </p>
 <p>The <strong>categories</strong> of devices are essentially two:</p>
 <ul>
@@ -157,29 +513,184 @@
 </li>
 </ul>
 <p>Various devices differ for the supported programming languages and for the IDE (Integrated Development Environment) used to program them. For example, you can choose a <a href="http://nodemcu.com/index_en.html">NodeMCU</a> for an environmental monitoring solution, because it provides a temperature-humidity sensor. But you can also use a <a href="https://www.raspberrypi.org/">Rasperry Pi</a> to consolidate all that data before to report them to the Cloud platform. Sometimes there are configurations consisting on more than one device connected together, for example Raspberry Pi + Arduino (or Genuino). An other important device is the <strong>Sense HAT</strong>, which is provided with a tiny processor. The Raspberry Pi talks to the Sense HAT's processor, and then that processor deals with the lower level device control and sensor control on the board.</p>
-<p><strong>Sense HAT</strong> is one add-on board provided with pressure, humidity,  temperature, movement sensors (gyroscopes, accelerometer, and magnetometer), and has a 8x8 LED output matrix and a joistick.</p>
+<p><strong>Sense HAT</strong> is one add-on board provided with gyroscope, accelerometer, magnetometer, temperature, barometric pressure and humidity sensors, and has a 8x8 LED output matrix and a joistick.</p>
 <p>For connecting the devices you can use a plug and play mechanism such as the Grove Kits(https://www.seeedstudio.com/Grove-Starter-Kit-p-709.html), without needing to weld.</p>
 <p>As you go to develop your own IoT solution, you have got a wide range of choice of device and sensors available. But the used techniques and APIs can be applied to any device with any sensor. </p>
 </li>
 <li>
-<p>Setting up a Raspberry Pi and Raspberry Pi Sense Hat (8 min)</p>
+<h3 id="setting-up-a-raspberry-pi-and-raspberry-pi-sense-hat-8-min"><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/22_Setting%20up%20a%20Raspberry%20Pi%20and%20Raspberry%20Pi%20Sense%20Hat_9min.mp4">Setting up a Raspberry Pi and Raspberry Pi Sense Hat</a> (8 min)</h3>
+<ul>
+<li>
+<h4 id="why-raspberry-pi-and-sense-hat">Why Raspberry Pi and Sense HAT?</h4>
+<p>Sense HAT has sensors for gyroscope, accelerometer, magnetometer, temperature, barometric pressure and humidity. It can output information on the built in 8x8 LED matrix, and it even has a five button joystick. There's a specific Python library named <em>Sense HAT</em> that you can use to control the Raspberry Pi Sense HAT. So, with a Raspberry Pi Sense HAT combination, you can <strong>sense the environment and send and receive information to and from the cloud</strong>.</p>
 </li>
-<li>Setting up your Raspberry Pi - step by step (10 min)</li>
-<li>Extra resource – (for Windows) Install the Raspbian Jessie OS on an SD Card (1 min)</li>
-<li>Learning module summary: Raspberry Pi and SenseHAT (10 min)</li>
+<li>
+<h4 id="required-hw">Required HW</h4>
+<p>Along with your Raspberry Pi and Sense HAT, you will need:</p>
+<ul>
+<li>
+<p>power supply for your Pi: <strong>Pi 3 is powered by a +5.1V micro USB supply (2.5A power supply is ideal)</strong></p>
+</li>
+<li>
+<p>a micro SD card that will act as the Pi's hard drive, holding the operating systems, software and applications you create (eight GB recommended). You need to use your computer to prepare the SD card.</p>
+</li>
+<li>
+<p>a monitor with a HDMI cable for the monitor</p>
+</li>
+<li>
+<p>a keyboard</p>
+</li>
+<li>
+<p>a mouse</p>
+</li>
+<li>
+<p>power supplies for all.  </p>
+</li>
+</ul>
+</li>
+<li>
+<h4 id="installing-the-os-on-the-micro-sd-card">Installing the OS on the Micro SD card</h4>
+<p>Before you can use your Pi, you need to download an OS for it. The OS will go in the micro SD card, the OS we're using is the Linux Raspbian Jessie, which is the based on the DPM Linux. It comes with a lot of software, including LibreOffice, which is a fully featured office suite compatible with Microsoft Office files, Node-RED, which is an open source visual editor for wiring together hardware devices, APIs and online services for the internet of things, and other software. In the documentation, under installation, you will find detailed instructions to download, on downloading the latest Raspbian Jessie OS and how to write the OS image on your SD card. </p>
+<p><strong> Slide the micro SD card in the Raspberry Pi. Before you power on the unit, assure that you attach the Sense HAT and that you have secured it. Attach the keyboard and mouse in the USB port, the screen on the HDMI port. Connect Internet wireless </strong></p>
+<p>Power on your Raspberry Pi. The primary desktop is displayed when the boot is complete. Click on the terminal icon to open the terminal window. The rest of the setup needs to be done from the terminal window. </p>
+<blockquote>
+<p>You could continue to work on the Raspberry Pi or switch to using your remote connection from your laptop. This will allow you to copy and paste from the documentation, rather than having to type every command.</p>
+</blockquote>
+</li>
+<li>
+<h4 id="configuration-of-the-hw">Configuration of the HW</h4>
+<p>To set up a remote connection, you need the <em>IP address</em> of your Raspberry Pi. In the terminal window of the Raspberry Pi, enter the command <code>hostname -I</code> then follow the instructions for your OS to access your Raspberry Pi. From the terminal window start the Raspberry Pi software configuration tool, by typing <code>sudo raspi-config</code> and pressing enter. The Raspberry Pi software configuration tool provides a straightforward way to configure your Raspberry Pi. </p>
+<blockquote>
+<p>The change user password option is selected, press enter, and change your password from the default. Keep this password safe, because it is not recoverable.</p>
+</blockquote>
+<p>Using the up down arrow keys, select host name, press enter and set the host name for your Pi. The default is Raspberry Pi, you can use the tab keys to jump to the available options, I press enter, since I made no changes. </p>
+<p>Now, let's modify the localization option. Set the default for cal, use the spacebar to select and deselect what you need, and set one of the locals as default. </p>
+<p>Set the time zone.</p>
+<p>If you have the WiFi option, set it to use the correct frequency for your country. </p>
+<p>For interfacing options, select P2 SSH and enable it, this will allow you to connect the Raspberry Pi via SSH. Enable P3 VNC, this will allow you connect to the Raspberry Pi user interface remotely. Finally, enable P5 I2C, which will allow the Sense HAT to communicate with the Raspberry Pi. You're now done with the configuration tool, reboot your Raspberry Pi. Once the device boots, you may be asked to log in with your new credentials, navigate back to the terminal window. There may be update to the firmware and Raspbian OS, the command <code>sudo rpi-update</code> will assure you have a latest firmware. Once complete, use the <code>sudo reboot -n</code> command to reboot the Pi. </p>
+<p>To update the Raspbian OS, enter the following three commands:</p>
+<ul>
+<li>
+<p><code>sudo apt-get update</code> to download the update</p>
+</li>
+<li>
+<p><code>sudo apt-get -y upgrade</code> to install the update</p>
+</li>
+<li>
+<p><code>sudo apt-get -y autoremove</code> to remove the file you downloaded. Update the Node.js, Confirm that you want to update.</p>
+</li>
+</ul>
+<p>This command will allow node applications to run bluetooth scans. Note the use of the back quotes surrounding the which node. If you use standard single quotes, you will get an error. </p>
+<p><strong>Geany</strong> is a convenient text editor, you can install it with this command. </p>
+<p>The Raspberry Pi is now ready for the class. Please reboot before starting, I hope you found this useful. Have fun exploring. </p>
+</li>
+<li>
+<h4 id="setting-up-your-raspberry-pi-step-by-step-pdf"><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/25_Setting%20up%20your%20Raspberry%20Pi%20_step%20by%20step_10min.pdf">Setting up your Raspberry Pi - step by step</a> (pdf)</h4>
+</li>
+</ul>
+</li>
 </ul>
 <h2 id="rapid-application-development-with-nodered-on-a-raspberry-pi">Rapid Application Development with NodeRED on a Raspberry Pi</h2>
 <ul>
-<li>NodeRED on Raspberry Pi part 1 (5 min)</li>
-<li>NodeRED on Raspberry Pi part 2 (6 min)</li>
-<li>QuickStart flow - step by step (10 min)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/24_NodeRED%20on%20Raspberry%20Pi%20part1_5min.mp4">NodeRED on Raspberry Pi part 1</a> (5 min)</li>
+</ul>
+<p>In this module, we're switching focus from programming on the backend in the cloud to programming on the Raspberry Pi. Using the <em>Raspbian Jessie wiyh Pixel</em> OS, we have the Node-RED preinstalled, as the <em>Iceweasel</em> browser we prefer because Node RED runs better on that browser than default.</p>
+<p>On the Raspberry Pi, Node RED provides different nodes with respect to the Bluemix, in particular in <em>Raspberry Pi</em> section . The runtime is slightly different, i.e. here the flow lives within the file system. There is a .node-red directory under the home dir, with configuration and setting files. There are also some differences in how we install new packages to be made available to the function node and to install new nodes on the pallette. In Bluemix we have not access to the command line, so, for adding any new packages we have to modify the .json file to the environment and then rebuild the environment. But on the Raspberry Pi, we have access to the command line so we can install directly. </p>
+<p>For installing a new package, we have to go inside the .node-red directory (another possibility is ti use the Global install option). We want to install as example the CRC function (cyclic redundancy check). In the <code>setting.js</code> file we add the new entry at the end of the global context. Once saved the <code>setting.js</code>, we use the <code>npm install</code> command and the package is installed. We have to stop with thw <code>node-red-stop</code> command and start with the command <code>node-red-start</code> for these changes to take effect. Now we can use the CRC function for calculating the crc of a string.</p>
+<ul>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/25_NodeRED%20on%20RaspberryPi%20part2_6min.mp4">NodeRED on Raspberry Pi part 2</a> (6 min)</li>
+</ul>
+<h2 id="add-a-new-node-to-the-palette">Add a new node to the palette.</h2>
+<p>We simply need to install the package so NodeRED can access it. </p>
+<p>The random node is already installed, by default, on the raspberry pi, so we are going to install another node, in particular a node that converts a binary file to base64 encoding and viceversa, enabling the text format. </p>
+<p>To make the node available, simply go onto the command line, make sure you are in the .node-red directory, and digit the install command: <code>npm install node-red-node-base64</code>. Once the node is installed, stopping and then starting NodeRED: <code>node-red-stop</code> snd <code>node-red-start</code>, then refreshing the browser screen, we'll see that node show up in the pallet. </p>
+<p>You may find it convenient to have node red start when the pi boots up. The command on how to install NodeRED, so it boots at system startup. 
+1:26
+And if I want to stop it starting as the ii boots, I've also got the command here on how to disable the autostart at boot. 
+1:35
+So I'm going to start my environment, and sure it start when the pi boots, so enter the command. 
+1:44
+Another node that's not installed by default on Bluemix, but is available at install time on the Raspberry Pi is the exec node. With the exec node, I can run a system command as if I was running it from the command line. 
+2:01
+Any output generated by the command is unavailable to my flow. 
+2:05
+I can very easily demonstrate the use of the node by drumming it onto the palette, 
+2:11
+adding an inject and a debug node. 
+2:14
+And I'm going to get it to issue the netstat command. So this prints information about the network's subsystem on the Raspberry Pi. You'll see I have the option of a pending msg.payload to the command. So this allows me to effectively pipe commands together like I would on the Linux command line. 
+2:38
+But I'm going to select to add an additional parameter. 
+2:42
+And I'm going to add the minus A parameter to the netstat command. Which outputs both listening and non-listening sockets. 
+2:53
+Simply deploying the flow. 
+2:56
+And then pressing the inject node. I see the expected output coming to the debug tab. 
+3:02
+So we're now going to look at the IBM Internet of Things platform. In the next module, we'll go in to details, but for now we're going to set up, similar to the initial sample application with the simulated device. We're now going to show you how to connect the Raspberry Pi to the Internet of things platform using that quick start service. So the quick start service is a sandbox environment, it doesn't require any security or pre-registration of device it just sits there. And allows me to publish data on the application allows me to visualize that data. 
+3:44
+So to do that, we're going to use an IBM IoT output node. 
+3:51
+If we open up the Configuration, you can see we get offered the option to be a Quickstart or a Registered device. We're going to select Quickstart and it predefines a device ID. So whenever you use a device with the IBM Internet of Things platform it has to have a unique device ID. Usually, when there is a network connected device, we'll use the network adapter MAC address. Because that should guarantee uniqueness. But the device ID has to be any string that guarantees its unique within the device type and organization. You'll notice that on the configuration node, there's also a very handy link to the quick start application. 
+4:41
+If i click this link, it will open up the quick start visualization page using the generated device ID. And we're simply going to use the random node to send the random data to the quick start application. So, I create an inject node, the random node, connect it through to the IoT node. And I'm just going to put a debug node there, so I get confirmation that I am actually sending the correct data, but now I also need to format the data. 
+5:14
+So, I am going to put a function node in, before sending the data. 
+5:19
+To get Quickstart to visualize the data correctly, it has to be in the right format for the platform to understand. 
+5:27
+So within the object, we need a D property, D for device, and within that property I can have any data that I want to publish in my event. For me, I'm just going to create a random property and then can fill it in with the data coming from the random node. 
+5:46
+So now, I've got the inject node. Publishing the data every five seconds. The random node generating a random number. And this function node is formatting the data. And then sending it to the IoT node to be sent to the cloud. And if I just deploy this application, you see in the debug tab, I'm getting the expected data. And if I switch into the Quickstart application, it now shows it's receiving data and I can now see that the random number is being sent to the IoT platform. </p>
+<ul>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/27_QuickStart%20flow_step%20by%20step_10min.pdf">QuickStart flow - step by step</a> (10 min)</li>
 <li>Programming Assignment: QuickStart flow on Raspberry Pi (1h)</li>
 <li>Learning module summary: Rapid Application Development with NodeRED on a Raspberry Pi (10 min)</li>
 </ul>
 <h2 id="introduction-to-the-watson-internet-of-things-platform">Introduction to the Watson Internet of Things Platform</h2>
+<h3 id="watson-internet-of-things-platform-5-min"><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/26_Watson%20Internet%20of%20Things%20platform_5min.mp4">Watson Internet of Things platform</a> (5 min)</h3>
+<p>The <strong>Internet of Things Platform</strong> is available as a service on Bluemix. It provides device access and the data connectivity. The platform provides a number of services to help us manage devices and the device data. </p>
+<p>We want to ensure that all data received is from a trusted device. So, the Internet of Things Platform provides a <strong>device registry</strong>. This allows you to hold security and metadata on all your devices in one place. </p>
+<p>The Internet of Things Platform also provides the <strong>connectivity</strong>. It uses <strong>MQTT</strong>, the <em>MQ Telemetry Transport protocol</em>, as the underlying mechanism to allow devices to communicate with the platform. </p>
+<p>It also provides <strong>support for gateway devices</strong>, and we'll look at the difference between a gateway and a device in the next module. </p>
+<p>The platform provides an <strong>API for device management</strong>, to allow you not only get data from a device but also to actively manage the device. </p>
+<p>And lastly the Internet of Things Platform provides <strong>integration with certain external services</strong>. So, as we look through the platform in a moment, you see we have integration with services such as <em>Jasper</em>. </p>
+<p>The Internet of Things Platform provides an API to allow devices, applications and gateways to communicate with the platform. It provides a REST API that allows access to configuration and historic data. </p>
+<p>In the dashbord, go into the application, in the connection section, and click on the <strong>Internet of Things Platform service</strong>. Then lauch the Watson IoT Platform. On the left hand side there are a number of sections. 
+The first one is the Board Overview section. Below there is the Devices section. And this is where I get access to all of the devices, to be able to manage devices, create new device types, and register new devices. And all of this can also be done using the API. Below the devices section is the Access section. The Internet of Things Platform ensures all access to the platform secured. So, whether it's a device sending data to the platform or an application sending a command or a control instruction to a device, every communication has to be authenticated by the platform. This access section allows you to manage who can send data to the platform. 
+Next we've got some usage information where you can get a little bit more information about what's going on in the platform. And lastly, there is the Settings section and this allows you to configure different aspects of the platform. It allows you to turn on and off the different features available on the platform, such as storing historic data. The Internet of Things Platform can store all the data that goes through the platform and allows you to retain that data for a set period of time. 
+On the settings page is where you can define and configure that behavior. The settings page is also where you enable and configure the integration with other services. </p>
+<p>One concept that you need to understand when using the platform is that of an <strong>organization</strong>. 
+While the previous Node-RED application didn't need any authorization or registration of devices or (we used the <em>quick start service</em>), now we have to refer to our organization that requires you to authenticate and register all devices and applications. </p>
+<p>You can see the six character organization ID, up on the top right corner of the dashboard. And every time you use an API, you need to make sure that you're sending data referring to the organization ID. As we look at the API and how to use it through Node-RED or directly through the programmatic API, we'll see how to plug in your organization ID.</p>
 <ul>
-<li>Watson Internet of Things platform (5 min)</li>
-<li>Devices, Applications and Gateways part 1 (6 min)</li>
+<li><a href="https://github.com/danielamazza/A_Developer_Guide_To_the_IoT_IBM/blob/master/02_Lecture_Videos/25_NodeRED%20on%20RaspberryPi%20part2_6min.mp4">Devices, Applications and Gateways part 1</a> (6 min) Going a little deeper ito the Internet of Things platform, we can see that is <strong>organization</strong> that ensures that all data coming to and from a device is trusted data from a trusted source. So now let's look at who you can actually send and receive data. </li>
+</ul>
+<p>Within the platform, there are three types of applications that can connect to the platform. 
+The first one is from a <strong>device</strong>. Before, it must be registered with the platform.Before you can register a device, you need to create a <em>device type</em>, that allows you to organize your devices into their capabilities. 
+Next, we have an <strong>application</strong>, that is a program that wants to communicate with the Internet of Things platform, either by receiving data from a device, or by sending a command to control a device. Unlike a device, an application doesn't need to be pre-registered to be able to communicate with the platform, but <em>it does need to send an API key to authenticate itself</em>. Then we have a <strong>gateway</strong>. A gateway is a special type of device. Sometimes you have sensors or sensor networks that aren't able to connect directly to the internet. So, cannot connect to the IOT platform. The Gateway acts as a bridge to connect the sensor network to the internet and the IBM IoT platform. Like a device, a gateway must be registered before it can communicate with the platform. When a device wants to send data to the platform, it creates an event, and the data flows in an event.So, devices send events to the platform, and applications receive those events. </p>
+<p>Now we are going to look at how you create device types, and then how you create and register a device. 
+B back in Bloomix, open the service on the dashboard. So, now in the overview section. 
+3:40
+To create a device type, I switch to the device section, and then select to add a device. 
+3:48
+On this screen, I can choose a pre-existing device type if I've created one, or I can press this button to create a new device type. 
+3:59
+And then I just go through and add any data that I want to that device type. I have the option of defining attributes, I won't capture it when defining a new device, or if I prefer I can just leave this all blank. Once you've gone through and you've created your device type, you then need to go and add a device. So, while in the screen, I can go and add a device and select the previously defined device type. 
+4:29
+If I define any attributes, I get asked to complete these when I'm registering the device, but eventually I get to this screen, where I'm asked to either select a pre-assigned key or create my own key. As a tip, when you're registering a device, I always use a common token. So as I'm modifying the code or changing the code, I always know what the token for any given device is. 
+4:57
+And that's because, once you get to this screen, this is the last chance you get to record the token. 
+5:06
+Once you close this screen, you cannot recover a token. 
+5:10
+And if you lose a token for a device, the only option you have, is to delete or unregister that device, and then reregister it again with a new token. 
+5:21
+So when developing, I always use a common token, so I don't have to keep enregistering and registering devices if I get what the token was. It's up to you how you want to classify your devices. The system places no demands on how you organize and classify your devices. However, when an application selects to receive data from a device, it has the option of specifying device type as one of the selectors on what data an application wants to receive. 
+5:51
+So, it's useful to classify different types of device, using a different device type.</p>
+<ul>
 <li>Devices, Applications and Gateways part 2 (7 min)</li>
 <li>Quiz: Using the NodeRED flow editor with your own Watson IoT platform. (5 questions)</li>
 <li>Learning module summary: Introduction to the Watson Internet of Things Platform (5 min)</li>
@@ -191,47 +702,82 @@
 <li>Programming Assignment: End-to-end scenario (2h)</li>
 <li>Additional assistance for the end-to-end assignment (6 min)</li>
 <li>Learning module summary: Controlling the device (10 min)</li>
-</ul></div>
-            
+</ul>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
         </div>
-
-        <footer class="col-md-12">
-            <hr>
-            
-            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-
-        <script src="../js/jquery-1.10.2.min.js"></script>
-        <script src="../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../js/highlight.pack.js"></script>
-        <script>var base_url = '..';</script>
-        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
-        <script src="../js/base.js"></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            From here you can search these documents. Enter
-                            your search terms below.
-                        </p>
-                        <form role="form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
-                            </div>
-                        </form>
-                        <div id="mkdocs-search-results"></div>
-                    </div>
-                    <div class="modal-footer">
-                    </div>
-                </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../week2/" title="Week2" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
-        </div>
-
-    </body>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Week2
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../week4/" title="Week4" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Week4
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-6b599127bc.js"></script>
+      <script>app.initialize({url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
 </html>
