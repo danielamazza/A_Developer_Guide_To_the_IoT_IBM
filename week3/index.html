@@ -698,7 +698,26 @@ So, it's useful to classify different types of device, using a different device 
 <h2 id="controlling-a-device">Controlling a device</h2>
 <ul>
 <li>Sending commands to a device (4 min)</li>
+</ul>
+<p>For sending commands to a device from NodeRED we can create a JSON package and use the API.
+The device must be registered before to receive commands. Using the input node, a device can be registered for all commands, or you can configure a node to receive only a specific command. </p>
+<p>As a gateway, you can receive commands for yourself, or you can choose to receive commands for devices that connect through yourself. When I choose to receive device commands, I get to specify the device type and the device ID of the commands I'm registering for.  </p>
+<p>When you register to a sequel of commands, you need to look at what command was sent and then handle that specific command appropriately. </p>
+<p><strong>A device cannot send a command to an other device.</strong> </p>
+<p>When we looked at sending device events, we have to use a specific message format so the QuickStart application could display the data correctly. For commands, there's no such recommended format. You can use any valid JSON object. However, sometimes the command name itself is sufficient information for the device to understand what to do. So there's no additional data needed for the command. In that case, you can just send an empty JSON object. </p>
+<p>Let's create a command flow statusIndicator. I have an LED connected to my Raspberry Pi, and I wanted to send a command to either turn that on or turn that off - alert state or normal state. </p>
+<p>We can create two different input nodes with a function node to send a payload for normal or for an alert status, and send this out through the Watson IoT output node and to the Raspberry Pi device. So I put in here, the device ID of the device to receive this. </p>
+<p>I can use the Linux service, to get the authentication credentials for this application. Deploying it then injecting one of these two options, we can either send normal or alert message. </p>
+<p>Switching over to the Rasberry Pi, we can use a Watson IoT input node to receive the command. We have the previously defined credentials available. So I can select those to connect to the service. We can then select either all commands or choose to select only a single command. </p>
+<p>Then we connect a debug node to see the output of the command coming into the servers. But typically you'd have to put a flow coming out of this node to actually handle the command correctly. </p>
+<p>So if I'm receiving all commands, I have to work out which command I received, and then switch to the appropriate flow to implement that command. And as you can see, I can now receive either the normal or the alert message. </p>
+<ul>
 <li>SenseHAT and SenseHAT simulator nodes in NodeRED (3 min)</li>
+</ul>
+<p>In the NodeRED pallet we have two nodes for SenseHAT (input and output). For the input node, you can choose one or more among the outputs: <em>Motion events</em>, <em>Environment events</em> and <em>Joistick events</em>.
+Environmental sensors publish about once every second, and they are the temperature and humidity and air pressure. The motion sensors publish about ten times a second. And that's your gyroscope magnetometer and accelerometer. The joystick events only publish when you actually interact with the joystick. </p>
+<p>We are focusing on the environmental temperature sensor. Select the sensors you want, and then that will initiate a flow. To output to the LED matrix, you're going to use the Sense HAT output node. And again, if you look in the info tab, you'll see all of the details of how you have to format the payload to actually control the output. If you don't have a Sense HAT, there are two additional nodes that you can install that acts as the Sense HAT simulator. (Going to the .node-red directory and digiting the command npm install node-red-node-pi-sense-hat-simulator). To allow you to control what the sensor's data is, there's also a web interface where you can control the environmental sensors. So you can set the value you want published. There is also an output node for the simulated Sense HAT that will show the state of the LED panel in the web interface.</p>
+<ul>
 <li>Programming Assignment: End-to-end scenario (2h)</li>
 <li>Additional assistance for the end-to-end assignment (6 min)</li>
 <li>Learning module summary: Controlling the device (10 min)</li>
